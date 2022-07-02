@@ -1,0 +1,270 @@
+html {
+  scroll-padding-top : 90px;
+}
+
+body {
+  font-family: 'Montserrat',sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat',sans-serif;
+}
+
+.big-title {
+  font-family: 'Montserrat-Black',sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#title h2 {
+  padding-top: 20px;
+  line-height: 1.2;
+}
+
+.sub-title {
+  font-weight: bold;
+}
+
+.desc-text {
+  padding: 10%;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 3% 15%;
+}
+
+/* sections */
+.colored-section {
+  background-color: #5972a5;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 1.2rem 15%;
+  transition: all 0.5s ease;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu';
+  font-size: 2rem;
+}
+
+.navbar-brand .logo {
+  width: 40px;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.nav-link {
+  font-family: 'Montserrat-light';
+  font-size: 1.2rem;
+}
+
+/* Title section */
+
+#title {
+  padding-top: 140px;
+}
+
+/* Download Buttons */
+
+.dl-btn {
+  margin: 5% 3% 5% 0;
+  width: 163px;
+  transition: all .3s ease;
+}
+
+.btn-outline-dark{
+  color: #fff;
+  background-color: #212529;
+}
+
+.btn-outline-dark:hover{
+  color: #000;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+/* Title Image */
+.title-img {
+  height: 53%;
+  transform: rotate(20deg);
+  margin-top: -80px;
+  position: absolute;
+  right: 20%;
+  z-index: 1;
+}
+
+
+/* Slideshow */
+#breeds {
+  position: relative;
+}
+
+.img-breeds {
+  float: left;
+  padding: 40px 10px 40px 100px;
+}
+
+/* Slide Show */
+.carousel {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.carousel-cell {
+  margin-right: 10px;
+  transition: all .5s linear;
+  border-radius: 5px;
+  /* counter-increment: carousel-cell; */
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /* content: counter(carousel-cell); */
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-cell:hover {
+  background: #e6edfc;
+}
+/* gallery focus */
+/* .flickity-enabled:focus .flickity-viewport {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+} */
+
+
+/* Product Section */
+#products {
+  background-color: #7b98d1;
+  text-align: center;
+}
+
+.product-row {
+  margin-top: 50px;
+}
+
+.product-box {
+  padding: 2% 5% 0;
+}
+
+.product-box:hover .prodicon {
+  color: #fff;
+}
+
+.product-box h3 {
+  color: #000;
+  transition: all .5s ease-out;
+}
+
+.product-box:hover h3 {
+  color: #fff;
+}
+
+.prodicon {
+  color : #000;
+  margin-bottom: 1rem;
+  transition: all .5s ease-out;
+}
+
+.prodicon-hover {
+  color: #fff;
+}
+
+/* Testimonial Section */
+
+#testimonial {
+  text-align: center;
+}
+
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+
+}
+.testimonial-card .avatar {
+    width: 110px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+
+}
+
+/* Contact Section */
+.contact-fill {
+  padding: 2% 4%;
+}
+
+.contact-icon {
+  padding-right: 20px;
+}
+
+.logo {
+  width: 30%;
+}
+
+.posisi {
+  text-align: center;
+}
+
+/* Footer Section */
+
+#footer {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.social-footer {
+  margin: 0 10px 20px;
+}
+
+.logo:hover {
+  animation: shine 1.5s linear forwards infinite alternate;
+}
+
+@keyframes shine {
+  100% {
+    filter: drop-shadow(4px 4px .2rem #55defa);
+    /* filter: invert(100%); */
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .container-fluid{
+    text-align: center;
+    padding: 7% 10%;
+  }
+  .title-img {
+    height: 100%;
+    transform: rotate(0);
+    margin-top: 0;
+    position: static;
+    right: 0;
+  }
+  .phone-box {
+    height: 450px;
+  }
+}
+
+@media (max-width: 991px) {
+  .product-box {
+    padding: 1% 5%;
+  }
+}
